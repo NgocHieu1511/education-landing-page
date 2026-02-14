@@ -1,0 +1,604 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Khóa học Toeic 450</title>
+    <!-- Thêm CSS của Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- style.css -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/sakura-js/dist/sakura.min.css"
+    />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav
+      class="navbar navbar-expand-lg bg-light-subtle border-bottom small position-sticky top-0 z-3"
+    >
+      <div class="container">
+        <!-- navbar brand -->
+        <a class="navbar-brand" href="../index.html">
+          <img src="../img/logo (2).png" alt="NH7 EDUCATION" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="../index.html"
+                >Trang chủ</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tài liệu</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Khóa học
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./Toeic.html">Toeic</a></li>
+                <li><a class="dropdown-item" href="#">JavaScript</a></li>
+                <li><a class="dropdown-item" href="#">Java</a></li>
+                <li><a class="dropdown-item" href="#">ASP.NET MVC</a></li>
+                <li><a class="dropdown-item" href="#">Mẹo tin học hay</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Giới thiệu</a>
+            </li>
+          </ul>
+          <!-- Đăng ký đăng nhập -->
+          <div class="me-2">
+            <a
+              href="#!"
+              class="btn btn-danger d-inline-flex justify-content-center align-items-center"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 640 640"
+                width="16"
+                height="16"
+                class="me-2"
+              >
+                <path
+                  fill="#ffffff"
+                  d="M320 312C386.3 312 440 258.3 440 192C440 125.7 386.3 72 320 72C253.7 72 200 125.7 200 192C200 258.3 253.7 312 320 312zM290.3 368C191.8 368 112 447.8 112 546.3C112 562.7 125.3 576 141.7 576L498.3 576C514.7 576 528 562.7 528 546.3C528 447.8 448.2 368 349.7 368L290.3 368z"
+                />
+              </svg>
+              Đăng ký</a
+            >
+            <a
+              href="#!"
+              class="btn btn-warning d-inline-flex justify-content-center align-items-center"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 640 640"
+                width="16"
+                height="16"
+                class="me-2"
+              >
+                <!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                <path
+                  fill="#ffffff"
+                  d="M416 160L480 160C497.7 160 512 174.3 512 192L512 448C512 465.7 497.7 480 480 480L416 480C398.3 480 384 494.3 384 512C384 529.7 398.3 544 416 544L480 544C533 544 576 501 576 448L576 192C576 139 533 96 480 96L416 96C398.3 96 384 110.3 384 128C384 145.7 398.3 160 416 160zM406.6 342.6C419.1 330.1 419.1 309.8 406.6 297.3L278.6 169.3C266.1 156.8 245.8 156.8 233.3 169.3C220.8 181.8 220.8 202.1 233.3 214.6L306.7 288L96 288C78.3 288 64 302.3 64 320C64 337.7 78.3 352 96 352L306.7 352L233.3 425.4C220.8 437.9 220.8 458.2 233.3 470.7C245.8 483.2 266.1 483.2 278.6 470.7L406.6 342.7z"
+                />
+              </svg>
+              Đăng nhập</a
+            >
+          </div>
+          <!-- form search -->
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-0"
+              type="search"
+              placeholder="Tìm kiếm theo...."
+              aria-label="Search"
+            />
+            <button class="btn btn-success btn-sm" type="submit">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 640 640"
+                width="17"
+                height="17"
+              >
+                <!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                <path
+                  d="M480 272C480 317.9 465.1 360.3 440 394.7L566.6 521.4C579.1 533.9 579.1 554.2 566.6 566.7C554.1 579.2 533.8 579.2 521.3 566.7L394.7 440C360.3 465.1 317.9 480 272 480C157.1 480 64 386.9 64 272C64 157.1 157.1 64 272 64C386.9 64 480 157.1 480 272zM272 416C351.5 416 416 351.5 416 272C416 192.5 351.5 128 272 128C192.5 128 128 192.5 128 272C128 351.5 192.5 416 272 416z"
+                />
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- end navbar -->
+    <!-- main content -->
+    <header class="py-5 border-bottom">
+      <div class="container">
+        <div class="row p-3 border-bottom">
+          <!-- khối bên trái -->
+          <div class="col-md-6">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="../index.html">Trang chủ</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Toeic
+                </li>
+              </ol>
+            </nav>
+            <h1 class="mt-2 fs-3 fw-1">Khóa học Toeic 450</h1>
+            <p class="small text-secondary">
+              Đây là khóa học cung cấp cho bạn những kiến thức cơ bản về ngữ
+              pháp từ vựng và các kỹ năng làm bài cần thiết trong đề thi Toeic.
+              Khóa học được thiết kế dành cho những người mới bắt đầu hoặc những
+              người muốn củng cố lại kiến thức cơ bản để đạt được điểm số 450
+              trong kỳ thi Toeic.
+            </p>
+            <hr />
+            <p>Số lượng bài học: 20 bài</p>
+            <p>Thời lượng: 5 phút/bài</p>
+            <p>Cập nhật: Thứ 2 hàng tuần</p>
+            <p>Giáo viên hướng dẫn: NH7</p>
+          </div>
+          <!-- khối bên phải -->
+          <div class="col-md-6">
+            <img
+              src="../img/toeic-poster.png"
+              alt="toeic"
+              class="img-fluid rounded"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- course -->
+    <section class="py-4 border-light">
+      <div class="container">
+        <h2 class="fs-5 fw-bold">Lộ trình khóa học</h2>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button fw-bold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Bài 1: Danh từ
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <ul class="list-unstyled">
+                  <li>
+                    <a
+                      target="_blank"
+                      class="d-flex align-items-center border rounded p-2 mb-2"
+                      href="https://youtu.be/mEAF3LxggCs"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 640 640"
+                        width="16"
+                        height="16"
+                      >
+                        <!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                        <path
+                          fill="rgb(43,167,254)"
+                          d="M320 112C434.9 112 528 205.1 528 320C528 434.9 434.9 528 320 528C205.1 528 112 434.9 112 320C112 205.1 205.1 112 320 112zM320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576zM276.5 211.5C269.1 207 259.8 206.8 252.2 211C244.6 215.2 240 223.3 240 232L240 408C240 416.7 244.7 424.7 252.3 428.9C259.9 433.1 269.1 433 276.6 428.4L420.6 340.4C427.7 336 432.1 328.3 432.1 319.9C432.1 311.5 427.7 303.8 420.6 299.4L276.6 211.4zM362 320L288 365.2L288 274.8L362 320z"
+                        />
+                      </svg>
+                      <span class="ps-2 text-primary"
+                        >Bài 1.1: Danh từ phần 1</span
+                      ></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      target="_blank"
+                      class="d-flex align-items-center border rounded p-2 mb-2"
+                      href="https://youtu.be/tptr93Z5AC4"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 640 640"
+                        width="16"
+                        height="16"
+                      >
+                        <!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                        <path
+                          fill="rgb(43,167,254)"
+                          d="M320 112C434.9 112 528 205.1 528 320C528 434.9 434.9 528 320 528C205.1 528 112 434.9 112 320C112 205.1 205.1 112 320 112zM320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576zM276.5 211.5C269.1 207 259.8 206.8 252.2 211C244.6 215.2 240 223.3 240 232L240 408C240 416.7 244.7 424.7 252.3 428.9C259.9 433.1 269.1 433 276.6 428.4L420.6 340.4C427.7 336 432.1 328.3 432.1 319.9C432.1 311.5 427.7 303.8 420.6 299.4L276.6 211.4zM362 320L288 365.2L288 274.8L362 320z"
+                        />
+                      </svg>
+                      <span class="ps-2 text-primary"
+                        >Bài 1.2: Danh từ phần 2</span
+                      ></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      target="_blank"
+                      class="d-flex align-items-center border rounded p-2 mb-2"
+                      href="https://youtu.be/yUHtnaYUGVY"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 640 640"
+                        width="16"
+                        height="16"
+                      >
+                        <!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                        <path
+                          fill="rgb(43,167,254)"
+                          d="M320 112C434.9 112 528 205.1 528 320C528 434.9 434.9 528 320 528C205.1 528 112 434.9 112 320C112 205.1 205.1 112 320 112zM320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576zM276.5 211.5C269.1 207 259.8 206.8 252.2 211C244.6 215.2 240 223.3 240 232L240 408C240 416.7 244.7 424.7 252.3 428.9C259.9 433.1 269.1 433 276.6 428.4L420.6 340.4C427.7 336 432.1 328.3 432.1 319.9C432.1 311.5 427.7 303.8 420.6 299.4L276.6 211.4zM362 320L288 365.2L288 274.8L362 320z"
+                        />
+                      </svg>
+                      <span class="ps-2 text-primary"
+                        >Bài 1.3: Từ vựng chủ đề Contracts</span
+                      ></a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed fw-bold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                Bài 2
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <ul class="list-unstyled">
+                  <li>
+                    <a
+                      target="_blank"
+                      class="d-flex align-items-center border rounded p-2 mb-2"
+                      href="https://youtu.be/mEAF3LxggCs"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 640 640"
+                        width="16"
+                        height="16"
+                      >
+                        <!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                        <path
+                          fill="rgb(43,167,254)"
+                          d="M320 112C434.9 112 528 205.1 528 320C528 434.9 434.9 528 320 528C205.1 528 112 434.9 112 320C112 205.1 205.1 112 320 112zM320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576zM276.5 211.5C269.1 207 259.8 206.8 252.2 211C244.6 215.2 240 223.3 240 232L240 408C240 416.7 244.7 424.7 252.3 428.9C259.9 433.1 269.1 433 276.6 428.4L420.6 340.4C427.7 336 432.1 328.3 432.1 319.9C432.1 311.5 427.7 303.8 420.6 299.4L276.6 211.4zM362 320L288 365.2L288 274.8L362 320z"
+                        />
+                      </svg>
+                      <span class="ps-2 text-primary">Bài 2.1</span></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      target="_blank"
+                      class="d-flex align-items-center border rounded p-2 mb-2"
+                      href="https://youtu.be/mEAF3LxggCs"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 640 640"
+                        width="16"
+                        height="16"
+                      >
+                        <!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                        <path
+                          fill="rgb(43,167,254)"
+                          d="M320 112C434.9 112 528 205.1 528 320C528 434.9 434.9 528 320 528C205.1 528 112 434.9 112 320C112 205.1 205.1 112 320 112zM320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576zM276.5 211.5C269.1 207 259.8 206.8 252.2 211C244.6 215.2 240 223.3 240 232L240 408C240 416.7 244.7 424.7 252.3 428.9C259.9 433.1 269.1 433 276.6 428.4L420.6 340.4C427.7 336 432.1 328.3 432.1 319.9C432.1 311.5 427.7 303.8 420.6 299.4L276.6 211.4zM362 320L288 365.2L288 274.8L362 320z"
+                        />
+                      </svg>
+                      <span class="ps-2 text-primary">Bài 2.2</span></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      target="_blank"
+                      class="d-flex align-items-center border rounded p-2 mb-2"
+                      href="https://youtu.be/mEAF3LxggCs"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 640 640"
+                        width="16"
+                        height="16"
+                      >
+                        <!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                        <path
+                          fill="rgb(43,167,254)"
+                          d="M320 112C434.9 112 528 205.1 528 320C528 434.9 434.9 528 320 528C205.1 528 112 434.9 112 320C112 205.1 205.1 112 320 112zM320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576zM276.5 211.5C269.1 207 259.8 206.8 252.2 211C244.6 215.2 240 223.3 240 232L240 408C240 416.7 244.7 424.7 252.3 428.9C259.9 433.1 269.1 433 276.6 428.4L420.6 340.4C427.7 336 432.1 328.3 432.1 319.9C432.1 311.5 427.7 303.8 420.6 299.4L276.6 211.4zM362 320L288 365.2L288 274.8L362 320z"
+                        />
+                      </svg>
+                      <span class="ps-2 text-primary">Bài 2.3</span></a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed fw-bold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                Bài 3
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <ul class="list-unstyled">
+                  <li>
+                    <a
+                      target="_blank"
+                      class="d-flex align-items-center border rounded p-2 mb-2"
+                      href="https://youtu.be/mEAF3LxggCs"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 640 640"
+                        width="16"
+                        height="16"
+                      >
+                        <!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                        <path
+                          fill="rgb(43,167,254)"
+                          d="M320 112C434.9 112 528 205.1 528 320C528 434.9 434.9 528 320 528C205.1 528 112 434.9 112 320C112 205.1 205.1 112 320 112zM320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576zM276.5 211.5C269.1 207 259.8 206.8 252.2 211C244.6 215.2 240 223.3 240 232L240 408C240 416.7 244.7 424.7 252.3 428.9C259.9 433.1 269.1 433 276.6 428.4L420.6 340.4C427.7 336 432.1 328.3 432.1 319.9C432.1 311.5 427.7 303.8 420.6 299.4L276.6 211.4zM362 320L288 365.2L288 274.8L362 320z"
+                        />
+                      </svg>
+                      <span class="ps-2 text-primary">Bài 3.1</span></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      target="_blank"
+                      class="d-flex align-items-center border rounded p-2 mb-2"
+                      href="https://youtu.be/mEAF3LxggCs"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 640 640"
+                        width="16"
+                        height="16"
+                      >
+                        <!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                        <path
+                          fill="rgb(43,167,254)"
+                          d="M320 112C434.9 112 528 205.1 528 320C528 434.9 434.9 528 320 528C205.1 528 112 434.9 112 320C112 205.1 205.1 112 320 112zM320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576zM276.5 211.5C269.1 207 259.8 206.8 252.2 211C244.6 215.2 240 223.3 240 232L240 408C240 416.7 244.7 424.7 252.3 428.9C259.9 433.1 269.1 433 276.6 428.4L420.6 340.4C427.7 336 432.1 328.3 432.1 319.9C432.1 311.5 427.7 303.8 420.6 299.4L276.6 211.4zM362 320L288 365.2L288 274.8L362 320z"
+                        />
+                      </svg>
+                      <span class="ps-2 text-primary">Bài 3.2</span></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      target="_blank"
+                      class="d-flex align-items-center border rounded p-2 mb-2"
+                      href="https://youtu.be/mEAF3LxggCs"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 640 640"
+                        width="16"
+                        height="16"
+                      >
+                        <!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                        <path
+                          fill="rgb(43,167,254)"
+                          d="M320 112C434.9 112 528 205.1 528 320C528 434.9 434.9 528 320 528C205.1 528 112 434.9 112 320C112 205.1 205.1 112 320 112zM320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576zM276.5 211.5C269.1 207 259.8 206.8 252.2 211C244.6 215.2 240 223.3 240 232L240 408C240 416.7 244.7 424.7 252.3 428.9C259.9 433.1 269.1 433 276.6 428.4L420.6 340.4C427.7 336 432.1 328.3 432.1 319.9C432.1 311.5 427.7 303.8 420.6 299.4L276.6 211.4zM362 320L288 365.2L288 274.8L362 320z"
+                        />
+                      </svg>
+                      <span class="ps-2 text-primary">Bài 3.3</span></a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed fw-bold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+              >
+                Bài 4
+              </button>
+            </h2>
+            <div
+              id="collapseFour"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <ul class="list-unstyled">
+                  <li>Bài 4.1</li>
+                  <li>Bài 4.2</li>
+                  <li>Bài 4.3</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+
+    <footer class="main-footer text-bg-dark py-5">
+      <div class="container">
+        <div class="row d-flex">
+          <!-- khối 1: 3 cột -->
+          <div class="col-md-3">
+            <div class="brand-icon mb-2">
+              <img
+                src="../img/logo (2).png"
+                alt=""
+                width="40px"
+                height="40px"
+              />
+            </div>
+
+            <address class="small text-secondary">
+              Địa chỉ: Đan Phượng, Hà Nội
+              <br />
+              Email: hieun123@gmail.com
+              <br />
+              SĐT: 0123456789
+            </address>
+          </div>
+          <!-- khối 2: 2 cột -->
+          <div class="col-md-2">
+            <h6 class="fw-bold">Main menu</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a class="small text-secondary" href="../index.html"
+                  >Trang chủ</a
+                >
+              </li>
+              <li><a class="small text-secondary" href="#!">Tài liệu</a></li>
+              <li><a class="small text-secondary" href="#!">Khóa học</a></li>
+              <li><a class="small text-secondary" href="#!">Giới thiệu</a></li>
+              <li><a class="small text-secondary" href="#!">Liên hệ</a></li>
+              <li><a class="small text-secondary" href="#!">Hỗ trợ</a></li>
+            </ul>
+          </div>
+          <!-- khối 3: 2 cột -->
+          <div class="col-md-2">
+            <h6 class="fw-bold">Misc</h6>
+            <ul class="list-unstyled">
+              <li><a class="small text-secondary" href="#!">Trang chủ</a></li>
+              <li><a class="small text-secondary" href="#!">Tài liệu</a></li>
+              <li><a class="small text-secondary" href="#!">Khóa học</a></li>
+              <li><a class="small text-secondary" href="#!">Giới thiệu</a></li>
+              <li><a class="small text-secondary" href="#!">Liên hệ</a></li>
+              <li><a class="small text-secondary" href="#!">Hỗ trợ</a></li>
+            </ul>
+          </div>
+          <!-- khối 4: 5 cột -->
+          <div class="col-md-5">
+            <h6 class="fw-bold">Follow us</h6>
+            <div>
+              <a
+                href="https://www.facebook.com/nguyen.ngoc.hieu.456269"
+                class="rounded-pill btn btn-sm px-md-3 btn-primary d-inline-flex align-items-center mb-2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-facebook me-md-2"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                  ></path>
+                </svg>
+                <span class="d-md-block">Facebook</span>
+              </a>
+
+              <a
+                href=""
+                class="rounded rounded-pill btn btn-sm px-md-3 btn-danger d-inline-flex align-items-center mb-2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-youtube me-md-2"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"
+                  ></path>
+                </svg>
+                <span class="d-md-block">YouTube</span>
+              </a>
+
+              <a
+                href=""
+                class="rounded rounded-pill btn btn-sm px-md-3 btn-outline-warning d-inline-flex align-items-center mb-2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-facebook me-md-2"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                  ></path>
+                </svg>
+                <span class="d-md-block">TikTok</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Thêm JS của Bootstrap (bundle gồm cả Popper) -->
+    <script src="./node_modules/sakura-js/dist/sakura.min.js"></script>
+    <script>
+      var sakura = new Sakura("body");
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
